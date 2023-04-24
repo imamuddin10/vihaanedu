@@ -1,0 +1,84 @@
+{% extends 'users/base.html' %}
+  {% block title %}Login{% endblock title %}
+  {% block head %}
+  <style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+  }
+  
+  .login-box {
+    width: 320px;
+    height: 420px;
+    background: #ffffff;
+    color: #000000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .login-box input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .login-box button[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 100%;
+    background: #33ccff;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+  
+  .login-box button[type="submit"]:hover {
+    cursor: pointer;
+    background: #ff99cc;
+    color: #000000;
+  }
+  
+  </style>
+{% endblock head %}
+{% block body %}
+
+<div class="login-box">
+    <h1>Login</h1>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Log In</button>
+    </form>
+  </div>
+{% endblock body %}
