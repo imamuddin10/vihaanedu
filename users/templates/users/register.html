@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Page</title>
+  {% comment %} <link rel="stylesheet" href="style.css"> {% endcomment %}
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+}
+
+.registration-box {
+  width: 500px;
+  height: auto;
+  background: #ffffff;
+  color: #000000;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 50px 30px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin:
+
+  </style>
+</head>
+<body>
+  <div class="registration-box">
+    <h1>Create an Account</h1>
+    <form>
+      <div class="name-boxes">
+        <div class="first-name">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+        <div class="last-name">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+      </div>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm-password" required>
+
+      <div class="gender-box">
+        <label for="gender">Gender</label>
+        <div class="radio-buttons">
+          <div class="male">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+          </div>
+          <div class="female">
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label>
+          </div>
+          <div class="other">
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="country-box">
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="">Select Country</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+
+      <div class="terms-box">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
+      </div>
+
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+</body>
+</html>
